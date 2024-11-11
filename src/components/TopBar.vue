@@ -22,6 +22,8 @@
                 </div>
                 <div class="social">
                     <a href=""><q-icon name="facebook" /></a>
+                    <a href=""><q-icon name="facebook" /></a>
+                    <a href=""><q-icon name="facebook" /></a>
                 </div>
               </div>
             </div>
@@ -44,6 +46,7 @@
     padding: 15px 0;
     text-align: left;
     overflow: hidden;
+    border: 2px yellow solid;
 }
 
 .top-bar .logo h1 {
