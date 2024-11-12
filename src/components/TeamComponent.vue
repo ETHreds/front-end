@@ -24,7 +24,7 @@
 import TeamMember from "./TeamMember.vue";
 const teamMembers = [
   {
-    imgSrc: "/src/assets/images/about-1.jpg",
+    imgSrc: "/src/assets/about-1.jpg",
     name: "Donald John",
     title: "Founder & CEO",
     contacts: [
@@ -35,7 +35,7 @@ const teamMembers = [
     ],
   },
   {
-    imgSrc: "/src/assets/images/about-2.jpg",
+    imgSrc: "/src/assets/about-2.jpg",
     name: "Jane Doe",
     title: "Head of Legal",
     contacts: [
@@ -45,7 +45,7 @@ const teamMembers = [
     ],
   },
   {
-    imgSrc: "/src/assets/images/about-1.jpg",
+    imgSrc: "/src/assets/about-1.jpg",
     name: "Michael Smith",
     title: "Senior Partner",
     contacts: [
@@ -54,7 +54,7 @@ const teamMembers = [
     ],
   },
   {
-    imgSrc: "/src/assets/images/about-2.jpg",
+    imgSrc: "/src/assets/about-2.jpg",
     name: "Sarah Johnson",
     title: "Finance Manager",
     contacts: [

@@ -4,7 +4,7 @@
       <div class="col-md-6">
         <div class="feature-img">
           <img
-            src="src/assets/images/portrait-handsome-young-black-african-smiling-man.png"
+            src="src/assets/portrait-handsome-young-black-african-smiling-man.png"
             alt="Image"
           />
         </div>
@@ -50,7 +50,7 @@ const reasonsToChooseUs = [
 ];
 </script>
 
-<style scoped>
+<style>
 .feature {
   position: relative;
   width: 100%;

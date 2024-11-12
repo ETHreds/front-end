@@ -14,7 +14,7 @@
             </div>
             <div class="contact-text">
               <h4>Our Head Office</h4>
-              <p>123 Street, New York, USA</p>
+              <p>ELECTRICITY HOUSE, 5TH FLOOR, P. O. BOX 935-80100, MOMBASA.</p>
             </div>
           </div>
           <div class="contact-info">
@@ -23,7 +23,7 @@
             </div>
             <div class="contact-text">
               <h4>Call for Help</h4>
-              <p>+012 345 6789</p>
+              <p>+254 725677133</p>
             </div>
           </div>
           <div class="contact-info">
@@ -32,77 +32,75 @@
             </div>
             <div class="contact-text">
               <h4>Email for Information</h4>
-              <p>info@example.com</p>
+              <p>jaredmagolo@yahoo.com</p>
             </div>
           </div>
         </div>
         <div class="col-md-7">
           <div class="contact-form">
             <div id="success"></div>
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
-              <div class="control-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Your Name"
-                  required="required"
-                  data-validation-required-message="Please enter your name"
-                />
-                <p class="help-block text-danger"></p>
-              </div>
-              <div class="control-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Your Email"
-                  required="required"
-                  data-validation-required-message="Please enter your email"
-                />
-                <p class="help-block text-danger"></p>
-              </div>
-              <div class="control-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="subject"
-                  placeholder="Subject"
-                  required="required"
-                  data-validation-required-message="Please enter a subject"
-                />
-                <p class="help-block text-danger"></p>
-              </div>
-              <div class="control-group">
-                <textarea
-                  class="form-control"
-                  id="message"
-                  placeholder="Message"
-                  required="required"
-                  data-validation-required-message="Please enter your message"
-                ></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-              <div>
-                <button class="btn" type="submit" id="sendMessageButton">
-                  Send Message
-                </button>
-              </div>
-            </form>
+            <q-form
+              action="https://some-url.com"
+              method="post"
+              @submit.prevent="onSubmit"
+            >
+              <q-input
+                outlined
+                v-model="ph"
+                label="Name"
+                placeholder="John Doe"
+                hint=""
+                dense
+              />
+              <q-input
+                outlined
+                v-model="ph"
+                label="Email"
+                placeholder="johndoe@gmail.com"
+                hint=""
+                type="email"
+                dense
+              />
+              <q-input
+                outlined
+                v-model="ph"
+                label="Phone Number"
+                placeholder="johndoe@gmail.com"
+                hint=""
+                type="tel"
+                dense
+              />
+              <q-input
+                outlined
+                v-model="ph"
+                label="Inquiry"
+                placeholder="Brief explanatin of your inquiry"
+                hint=""
+                type="textarea"
+                dense
+              />
+              <p>
+                Any information you provide will be kept confidential and used
+                solely for the purpose of responding to your inquiry.
+              </p>
+              <q-btn label="Submit" type="submit" class="btn" />
+            </q-form>
           </div>
         </div>
       </div>
     </div>
-    <p>
-      Your privacy is important to us. Any information you provide will be kept
-      confidential and used solely for the purpose of responding to your
-      inquiry.
-    </p>
   </div>
   <!-- Contact End -->
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const ph = ref("");
+const onSubmit = () => {
+  console.log("Submited");
+};
+</script>
 
 <style lang="scss" scoped>
 /*******************************/
@@ -191,7 +189,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.contact .contact-form .btn {
+.btn {
   padding: 15px 30px;
   font-size: 16px;
   font-weight: 600;

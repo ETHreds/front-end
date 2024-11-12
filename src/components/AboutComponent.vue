@@ -5,10 +5,10 @@
       <div class="col-md-6 q-pa-md">
         <div class="about-img">
           <div class="about-img-1">
-            <img src="src/assets/images/about-1.jpg" alt="Image" />
+            <img src="src/assets/about-1.jpg" alt="Image" />
           </div>
           <div class="about-img-2">
-            <img src="src/assets/images/about-2.jpg" alt="Image" />
+            <img src="src/assets/about-2.jpg" alt="Image" />
           </div>
         </div>
       </div>
