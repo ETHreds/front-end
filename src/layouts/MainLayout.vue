@@ -2,26 +2,7 @@
   <q-layout view="hHh lpR fFf">
     <q-header elevated reveal class="m-0 bg-black">
       <top-bar />
-
-      <q-tabs v-model="tab">
-        <q-route-tab label="Home" to="/" exact />
-        <!-- <q-route-tab label="About Us" to="/about-us"  />
-        <q-route-tab
-          label="Practice Areas"
-          to="/practise-areas"
-
-        />
-        <q-route-tab
-          label="Team"
-          to="/team"
-
-        />
-        <q-route-tab
-          label="Contact Us"
-          to=/contact-us
-
-        /> -->
-      </q-tabs>
+      <NavigationComponent />
     </q-header>
 
     <q-page-container>
@@ -33,5 +14,6 @@
 <script setup>
 import TopBar from "src/components/TopBar.vue";
 import FooterComponent from "src/components/FooterComponent.vue";
+import NavigationComponent from "src/components/NavigationComponent.vue";
 </script>
 <style></style>
