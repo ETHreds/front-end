@@ -6,7 +6,7 @@
           <q-item clickable>
             <router-link to="/">HOME</router-link>
           </q-item>
-          <q-item clickable>
+          <!-- <q-item clickable>
             <router-link to="/about-us">ABOUT US</router-link>
           </q-item>
           <q-item clickable>
@@ -14,15 +14,15 @@
           </q-item>
           <q-item clickable>
             <router-link to="/contact-us">CONTACT US</router-link>
-          </q-item>
+          </q-item> -->
         </q-list>
       </q-menu>
     </q-btn>
     <ul class="list">
       <li><router-link to="/">HOME</router-link></li>
-      <li><router-link to="/about-us">ABOUT US</router-link></li>
+      <!-- <li><router-link to="/about-us">ABOUT US</router-link></li>
       <li><router-link to="/team">TEAM</router-link></li>
-      <li><router-link to="/contact-us">CONTACT US</router-link></li>
+      <li><router-link to="/contact-us">CONTACT US</router-link></li> -->
     </ul>
     <button class="btn">Schedule An Appointment</button>
   </nav>
@@ -92,7 +92,7 @@ a {
   &::before {
     content: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2024.8%2018.92%27%20width=%2724.8%27%20height=%2718.92%27%3E%3Cpath%20d=%27M23.8,9.46H1m22.8,8.46H1M23.8,1H1%27%20fill=%27none%27%20stroke=%27%23fff%27%20stroke-linecap=%27round%27%20stroke-width=%272%27%2F%3E%3C%2Fsvg%3E");
   }
-  @media (min-width: 640px) {
+  @media (min-width: 540px) {
     display: none;
   }
   q-menu {
